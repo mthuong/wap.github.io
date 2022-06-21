@@ -1,0 +1,51 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: antiquewhite;
+}
+
+h1 {
+  color: darkorange;
+}
+
+h2 {
+  color: coral;
+}
+
+.main {
+  text-align: center;
+}
+
+.name {
+  font-style: italic;
+}
+
+.hobby {
+  font-family: cursive;
+}
+
+.movieLink {
+  color: deeppink;
+}
+
+.mood-label::after {
+  content: ": ";
+}
+
+.mood-image {
+  height: 300px;
+}
+
+.friend {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+}
+
+ul > li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
