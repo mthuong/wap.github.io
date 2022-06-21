@@ -7,6 +7,10 @@ h1 {
   color: darkorange;
 }
 
+h2::first-letter {
+  font-size: 1.5em;
+}
+
 h2 {
   color: coral;
 }
@@ -23,8 +27,34 @@ h2 {
   font-family: cursive;
 }
 
-.movieLink {
+.movie-link {
   color: deeppink;
+}
+
+a.movie-link::before {
+  content: '(';
+  color: black;
+}
+
+a.movie-link::after {
+  content: ')';
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.genres-label {
+  font-style: italic;
+}
+
+.description-label {
+  font-style: italic;
 }
 
 .mood-label::after {
