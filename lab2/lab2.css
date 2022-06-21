@@ -51,10 +51,12 @@ a:hover {
 
 .genres-label {
   font-style: italic;
+  color:cadetblue;
 }
 
 .description-label {
   font-style: italic;
+  color:cadetblue;
 }
 
 .mood-label::after {
@@ -73,6 +75,16 @@ a:hover {
 ul > li {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: oblique;
+}
+
+/* Revert order list */
+ol { 
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+ol > li {
+  flex: 0 0 auto;
 }
 
 footer {
