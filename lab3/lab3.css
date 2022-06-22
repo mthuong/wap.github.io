@@ -1,0 +1,118 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 20vw;
+  max-width: 100px;
+}
+
+.title {
+  font-size: 32px;
+  /* font-weight: 700; */
+}
+
+.btn-logout {
+  height: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin: 0 16px 0 16px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.table-product {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table > caption {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+table tr > th {
+  padding: 10px;
+  border: 1px solid #dddddd;
+  background-color: aliceblue;
+}
+
+table tr, td {
+  text-align: center;
+  border: 1px solid #dddddd;
+  padding: 10px;
+}
+
+table td i {
+  font-size: 24px;
+}
+
+td i.fa-plus {
+  color: rgb(102, 187, 106)
+}
+
+td i.fa-minus {
+  color: rgb(144, 202, 249)
+}
+
+/* Shopping Cart */
+.table-cart {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+}
+
+.quantity > * {
+  display: inline;
+  vertical-align: middle;
+}
+
+.input-quantity {
+  width: 50px;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.total-cost {
+  font-size: 30px;
+  text-align: right;
+  padding-right: 15%;
+}
+
+.actions {
+  margin-top: 24px;
+}
+
+.btn-place-order {
+  font-size: 32px;
+  height: 80px;
+  float: right;
+}
