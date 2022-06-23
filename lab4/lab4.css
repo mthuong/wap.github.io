@@ -1,0 +1,179 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.header {
+  background-color: #A2CBBC;
+  padding: 16px;
+}
+
+.header-title {
+  display: inline;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.more-actions {
+  display: inline;
+  margin-left: 20px;
+}
+
+.select-actions {
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  line-height: inherit;
+  outline: none;
+}
+
+input {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+textarea {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Content */
+.content {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+input[type="text"] {
+  height: 2em;
+  border: 1px solid silver;
+  outline: none;
+}
+
+textarea {
+  border: 1px solid silver;
+  outline: none;
+}
+
+/* Left panel */
+.left-panel {
+  flex: 1;
+  /* background-color: blanchedalmond; */
+  padding: 1em 2em 1em 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.session-title {
+  text-decoration: underline;
+}
+
+.label {
+  flex: 50%;
+  font-weight: 700;
+}
+
+.input {
+  flex: 50%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-items-top {
+  align-items: flex-start;
+}
+
+.padding-vertical {
+  padding: 8px 0;
+}
+
+.required {
+  color: red;
+}
+
+.textarea-address {
+  flex: 50%;
+  height: 100px;
+  resize: none;
+}
+
+.selector {
+  height: 2em;
+  border: 1px solid silver;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  line-height: inherit;
+  outline: none;
+  flex: 50%;
+}
+
+.value {
+  display: flex;
+  flex: 50%;
+}
+
+.value>* {
+  width: 100%;
+}
+
+/* Right panel */
+.right-panel {
+  flex: 1;
+  /* background-color: cadetblue; */
+  padding: 1em 1em 1em 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-panel>* {
+  padding: 16px 0;
+}
+
+/* Actions */
+.actions {
+  background-color: #E3E3E3;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #7AA897;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  margin: 6px;
+  padding: 12px 24px;
+}
+
+/* Button effect */
+button {
+  border: 0;
+  transition: all .3s;
+  cursor: pointer;
+  border-radius: 5px;
+  border-bottom: 4px solid lighten(gray, 70%);
+  box-shadow: 0px 5px 10px rgba(darken(#7AA897, 40%));
+}
+
+button:hover {
+  box-shadow: 0px 15px 25px -5px rgba(darken(#7AA897, 40%));
+  transform: scale(1.03);
+}
+
+button:active {
+  box-shadow: 0px 4px 8px rgba(darken(#7AA897, 30%));transform: scale(.98);
+}

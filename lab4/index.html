@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAP - Lab 4</title>
+  <link href="lab4.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <form>
+    <!-- Header -->
+    <div class="header">
+      <div class="header-title">Workshop Registration</div>
+      <div class="more-actions">
+        <select class="select-actions">
+          <option>More actions</option>
+          <option>Register</option>
+          <option>View</option>
+          <option>Cancel</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="left-panel">
+        <div class="session-title">Register now while seats are available!</div>
+        <div class="row padding-vertical">
+          <div class="label">First Name <span class="required">*</span></div>
+          <div class="value">
+            <input type="text" name="first_name" class="input" required>
+          </div>
+        </div>
+
+        <div class="row padding-vertical">
+          <div class="label">Last Name <span class="required">*</span></div>
+          <div class="value">
+            <input type="text" name="last_name" class="input" required>
+          </div>
+
+        </div>
+
+        <div class="row padding-vertical">
+          <div class="label">Company/Institution <span class="required">*</span></div>
+          <div class="value">
+            <input type="text" name="company" class="input" required>
+          </div>
+        </div>
+
+        <div class="row padding-vertical align-items-top">
+          <div class="label">Address <span class="required">*</span></div>
+          <div class="value">
+            <textarea name="address" class="textarea-address" required></textarea>
+          </div>
+
+        </div>
+
+        <div class="row padding-vertical">
+          <div class="label">City</div>
+          <div class="value">
+            <input type="text" name="city" class="input">
+          </div>
+        </div>
+
+        <div class="row padding-vertical">
+          <div class="label">State / Province / Region</div>
+          <div class="value">
+            <select class="selector" name="state">
+              <option>-Select-</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row padding-vertical">
+          <div class="label">Country</div>
+          <div class="value">
+            <select class="selector" name="country">
+              <option>-Select-</option>
+              <option value="USA">USA</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row padding-vertical">
+          <div class="label">Email <span class="required">*</span></div>
+          <div class="value">
+            <input type="text" name="email" class="input" required>
+          </div>
+        </div>
+
+        <div class="row padding-vertical">
+          <div class="label">Phone Number <span class="required">*</span></div>
+          <div class="value">
+            <input type="text" name="phone" class="input" required>
+          </div>
+        </div>
+
+      </div>
+      <div class="right-panel">
+        <div class="session-title">Lunch</div>
+
+        <div class="row padding-vertical">
+          <div class="label">Meal Preference</div>
+
+          <div class="value">
+            <select class="selector" name="meal-preference">
+              <option value="Vegetarian">Vegetarian</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="session-title">Payment Details</div>
+
+        <div class="row padding-vertical align-items-top">
+          <div class="label">Payment Mode</div>
+          <div class="value column">
+            <label><input type="checkbox" name="cash" value="1"> Cash</label>
+            <label><input type="checkbox" name="cheque" value="1"> Cheque</label>
+            <label><input type="checkbox" name="demand-craft" value="1"> Demand Craft</label>
+          </div>
+        </div>
+
+        <div class="row padding-vertical">
+          <div class="label">DD/Cheque No.</div>
+          <div class="value">
+            <input type="text" name="dd_cheque_no" class="input">
+          </div>
+        </div>
+
+        <div class="row padding-vertical">
+          <div class="label">Drawn On (Bank Name)</div>
+          <div class="value">
+            <input type="text" name="bank_name" class="input">
+          </div>
+        </div>
+
+        <div class="row padding-vertical">
+          <div class="label">Payable at</div>
+          <div class="value">
+            <input type="text" name="payable_at" class="input">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="actions">
+      <button class="btn">Submit</button>
+      <button class="btn">Reset</button>
+    </div>
+  </form>
+</body>
+
+</html>
