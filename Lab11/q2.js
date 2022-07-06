@@ -16,6 +16,8 @@ http
       solution2(req, res);
     } else if (url === "/file3" && method === "GET") {
       solution3(req, res);
+    } else if (url === "/file4" && method === "GET") {
+      solution4(req, res);
     }
   })
   .listen(4000);
@@ -42,6 +44,26 @@ function solution2(req, res) {
 function solution3(req, res) {
   const file = fs.createReadStream(path.join(__dirname, "file.jpg"));
   file.pipe(res);
+  file.on("error", (error) => {
+    console.log(error);
+    res.end("Read file error!!!");
+  });
+}
+
+// Solution 4
+function solution4(req, res) {
+  const file = fs.createReadStream(path.join(__dirname, "file.jpg"), {
+    highWaterMark: 16 * 1024,
+  });
+  
+  file.on('data', function(chunk) {
+    res.write(chunk);
+  });
+
+  file.on('end', function() {
+    res.end();
+  })
+
   file.on("error", (error) => {
     console.log(error);
     res.end("Read file error!!!");
