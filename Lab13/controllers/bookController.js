@@ -1,8 +1,8 @@
 const Book = require('../models/book');
 
 exports.save = (req, res, next) => {
-  const { title, ISBN, publishedDate, author } = req.body;
-  const book = new Book(null, title, ISBN, publishedDate, author).save();
+  const { title, isbn, publishedDate, author } = req.body;
+  const book = new Book(null, title, isbn, publishedDate, author).save();
   res.status(200).json(book);
 }
 
